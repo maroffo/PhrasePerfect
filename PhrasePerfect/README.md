@@ -48,9 +48,9 @@ On first launch, PhrasePerfect will offer to download a recommended model automa
 **Recommended models:**
 | Model | Size | RAM Required | Quality |
 |-------|------|--------------|---------|
-| `mlx-community/gemma-2-2b-it-4bit` | ~1.5GB | 8GB | Good for quick translations |
-| `mlx-community/gemma-2-9b-it-4bit` | ~5GB | 16GB | Better quality |
-| `mlx-community/Llama-3.2-3B-Instruct-4bit` | ~2GB | 8GB | Fast, good quality |
+| `mlx-community/gemma-3-1b-it-4bit` | ~0.8GB | 8GB | Ultra fast, good for quick translations |
+| `mlx-community/gemma-3-4b-it-4bit` | ~2.5GB | 8GB | Good balance of speed and quality |
+| `mlx-community/gemma-3-12b-it-4bit` | ~7GB | 16GB | Best quality translations |
 
 ### Option 2: Manual Download
 
@@ -59,13 +59,13 @@ On first launch, PhrasePerfect will offer to download a recommended model automa
 # Install huggingface-cli if needed
 pip install huggingface-hub
 
-# Download a model (example: Gemma 2 9B)
-huggingface-cli download mlx-community/gemma-2-9b-it-4bit \
-    --local-dir ~/Models/gemma-2-9b-it-4bit
+# Download a model (example: Gemma 3 4B)
+huggingface-cli download mlx-community/gemma-3-4b-it-4bit \
+    --local-dir ~/Models/gemma-3-4b-it-4bit
 
 # Or a smaller model for machines with less RAM
-huggingface-cli download mlx-community/gemma-2-2b-it-4bit \
-    --local-dir ~/Models/gemma-2-2b-it-4bit
+huggingface-cli download mlx-community/gemma-3-1b-it-4bit \
+    --local-dir ~/Models/gemma-3-1b-it-4bit
 ```
 
 **Using Python mlx-lm (to convert your own models):**
@@ -74,8 +74,8 @@ pip install mlx-lm
 
 # Convert and quantize a model from Hugging Face
 python -m mlx_lm.convert \
-    --hf-path google/gemma-2-9b-it \
-    --mlx-path ~/Models/gemma-2-9b-it-mlx \
+    --hf-path google/gemma-3-4b-it \
+    --mlx-path ~/Models/gemma-3-4b-it-mlx \
     -q
 ```
 
