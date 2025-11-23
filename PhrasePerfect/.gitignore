@@ -1,0 +1,21 @@
+# ABOUTME: Git ignore file for PhrasePerfect Swift project
+# ABOUTME: Excludes build artifacts, Xcode caches, and dependency checkouts
+
+# Build artifacts
+.build/
+.xcodebuild/
+*.xcodeproj/
+DerivedData/
+
+# Swift Package Manager
+.swiftpm/
+Package.resolved
+
+# macOS
+.DS_Store
+*.dSYM
+
+# Xcode
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
