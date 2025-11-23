@@ -14,29 +14,29 @@ struct RecommendedModel: Identifiable, Hashable {
 
     static let models: [RecommendedModel] = [
         RecommendedModel(
-            id: "gemma-2-2b",
-            name: "Gemma 2 2B (Recommended)",
-            repoId: "mlx-community/gemma-2-2b-it-4bit",
-            sizeDescription: "~1.5 GB",
-            sizeBytes: 1_600_000_000,
+            id: "gemma-3-1b",
+            name: "Gemma 3 1B (Recommended)",
+            repoId: "mlx-community/gemma-3-1b-it-4bit",
+            sizeDescription: "~0.8 GB",
+            sizeBytes: 800_000_000,
             ramRequired: "8 GB",
-            description: "Fast and lightweight. Great for quick translations."
+            description: "Ultra fast and lightweight. Great for quick translations."
         ),
         RecommendedModel(
-            id: "llama-3.2-3b",
-            name: "Llama 3.2 3B",
-            repoId: "mlx-community/Llama-3.2-3B-Instruct-4bit",
-            sizeDescription: "~2 GB",
-            sizeBytes: 2_000_000_000,
+            id: "gemma-3-4b",
+            name: "Gemma 3 4B",
+            repoId: "mlx-community/gemma-3-4b-it-4bit",
+            sizeDescription: "~2.5 GB",
+            sizeBytes: 2_500_000_000,
             ramRequired: "8 GB",
             description: "Good balance of speed and quality."
         ),
         RecommendedModel(
-            id: "gemma-2-9b",
-            name: "Gemma 2 9B (Best Quality)",
-            repoId: "mlx-community/gemma-2-9b-it-4bit",
-            sizeDescription: "~5 GB",
-            sizeBytes: 5_000_000_000,
+            id: "gemma-3-12b",
+            name: "Gemma 3 12B (Best Quality)",
+            repoId: "mlx-community/gemma-3-12b-it-4bit",
+            sizeDescription: "~7 GB",
+            sizeBytes: 7_000_000_000,
             ramRequired: "16 GB",
             description: "Higher quality translations. Requires more RAM."
         ),
